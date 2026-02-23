@@ -1,21 +1,24 @@
 /* ============================================
-   KAVITA - Warm Brown Aesthetic Portfolio
+   KAVITA - Warm Cream & Brown Aesthetic Portfolio
    ============================================ */
 
 :root {
-  --bg: #1a1410;
-  --bg-warm: #211a14;
-  --bg-glass: rgba(40, 30, 22, 0.55);
-  --bg-glass-hover: rgba(50, 38, 28, 0.7);
-  --border-glass: rgba(255, 255, 255, 0.06);
-  --border-glass-hover: rgba(255, 255, 255, 0.12);
-  --text: #f0e6d8;
-  --text-secondary: #b8a898;
-  --text-muted: #7a6b5d;
-  --accent: #c9a87c;
-  --accent-soft: rgba(201, 168, 124, 0.12);
-  --white: #f5efe8;
-  --grid-line: rgba(255, 255, 255, 0.035);
+  --bg: #faf6f0;
+  --bg-warm: #f3ece3;
+  --bg-glass: rgba(255, 255, 255, 0.5);
+  --bg-glass-hover: rgba(255, 255, 255, 0.7);
+  --border-glass: rgba(160, 120, 80, 0.1);
+  --border-glass-hover: rgba(160, 120, 80, 0.2);
+  --text: #2c1a0e;
+  --text-secondary: #6b5544;
+  --text-muted: #a09080;
+  --accent: #8b5a3c;
+  --accent-light: #a06840;
+  --accent-soft: rgba(139, 90, 60, 0.1);
+  --olive: #8b5a3c;
+  --olive-light: #8b5a3c;
+  --white: #ffffff;
+  --grid-line: rgba(160, 120, 80, 0.06);
   --font-display: 'DM Serif Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, sans-serif;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,7 +55,7 @@ body::before {
   background-image:
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 80px 80px;
+  background-size: 90px 90px;
 }
 
 img { max-width: 100%; display: block; }
@@ -82,7 +85,7 @@ a {
 .glass-card:hover {
   background: var(--bg-glass-hover);
   border-color: var(--border-glass-hover);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px rgba(44, 26, 14, 0.08);
 }
 
 /* ========== AMBIENT BLOBS ========== */
@@ -98,19 +101,19 @@ a {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.2;
+  opacity: 0.3;
   animation: blobFloat 20s ease-in-out infinite alternate;
 }
 
 .blob-1 {
   width: 500px; height: 500px;
-  background: #5c3d2e;
+  background: #e8d5c0;
   top: -10%; left: -5%;
 }
 
 .blob-2 {
   width: 400px; height: 400px;
-  background: #3d2e1e;
+  background: #d4bfa8;
   top: 40%; right: -8%;
   animation-delay: -7s;
   animation-duration: 25s;
@@ -118,7 +121,7 @@ a {
 
 .blob-3 {
   width: 350px; height: 350px;
-  background: #4a3526;
+  background: #c8b090;
   bottom: 10%; left: 30%;
   animation-delay: -14s;
   animation-duration: 22s;
@@ -144,18 +147,18 @@ a {
   padding: 12px 28px;
   width: calc(100% - 48px);
   max-width: 800px;
-  background: rgba(26, 20, 16, 0.5);
+  background: rgba(250, 246, 240, 0.5);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(160, 120, 80, 0.1);
   border-radius: 100px;
   transition: all 0.4s var(--ease);
 }
 
 .navbar.scrolled {
-  background: rgba(26, 20, 16, 0.8);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(250, 246, 240, 0.85);
+  box-shadow: 0 4px 24px rgba(44, 26, 14, 0.08);
+  border-color: rgba(160, 120, 80, 0.15);
 }
 
 .nav-logo {
@@ -316,25 +319,25 @@ a {
 
 .btn-primary {
   background: var(--accent);
-  color: var(--bg);
+  color: var(--white);
 }
 
 .btn-primary:hover {
-  background: #d4b68a;
+  background: var(--accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(201, 168, 124, 0.25);
+  box-shadow: 0 8px 24px rgba(139, 90, 60, 0.25);
 }
 
 .btn-ghost {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(160, 120, 80, 0.12);
 }
 
 .btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(160, 120, 80, 0.25);
   transform: translateY(-2px);
 }
 
@@ -400,7 +403,7 @@ a {
   display: block;
   font-family: var(--font-display);
   font-size: 1.8rem;
-  color: var(--accent);
+  color: var(--olive-light);
   margin-bottom: 4px;
 }
 
@@ -467,9 +470,9 @@ a {
 
 .filter-btn {
   padding: 9px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(160, 120, 80, 0.12);
   border-radius: 100px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   font-family: var(--font-body);
   font-size: 0.8rem;
@@ -480,14 +483,14 @@ a {
 }
 
 .filter-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.8);
   color: var(--text);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(160, 120, 80, 0.25);
 }
 
 .filter-btn.active {
   background: var(--accent);
-  color: var(--bg);
+  color: var(--white);
   border-color: var(--accent);
 }
 
@@ -517,7 +520,7 @@ a {
 
 .gallery-item:hover img {
   transform: scale(1.05);
-  filter: brightness(0.75);
+  filter: brightness(0.85);
 }
 
 .gallery-overlay {
@@ -535,10 +538,10 @@ a {
 .gallery-glass {
   width: 100%;
   padding: 18px 20px;
-  background: rgba(26, 20, 16, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(160, 120, 80, 0.12);
   border-radius: var(--radius-sm);
   transform: translateY(10px);
   transition: transform 0.4s var(--ease);
@@ -598,8 +601,8 @@ a {
 .skill-num {
   font-family: var(--font-display);
   font-size: 2rem;
-  color: var(--accent);
-  opacity: 0.4;
+  color: var(--olive-light);
+  opacity: 0.5;
   display: block;
   margin-bottom: 16px;
   line-height: 1;
@@ -715,9 +718,9 @@ a {
 .contact-form textarea {
   width: 100%;
   padding: 14px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(160, 120, 80, 0.12);
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.6);
   font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 300;
@@ -734,7 +737,7 @@ a {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--accent);
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
@@ -760,7 +763,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(160, 120, 80, 0.12);
 }
 
 .footer-logo {
@@ -780,7 +783,7 @@ a {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(20, 16, 12, 0.92);
+  background: rgba(250, 246, 240, 0.92);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   display: flex;
@@ -800,9 +803,9 @@ a {
   position: absolute;
   top: 24px;
   right: 32px;
-  background: rgba(40, 30, 22, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(160, 120, 80, 0.12);
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -818,7 +821,7 @@ a {
 }
 
 .lightbox-close:hover {
-  background: rgba(40, 30, 22, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   transform: rotate(90deg);
 }
 
@@ -826,9 +829,9 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(40, 30, 22, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(160, 120, 80, 0.12);
   color: var(--text);
   font-size: 1.2rem;
   width: 44px;
@@ -843,7 +846,7 @@ a {
 }
 
 .lightbox-nav:hover {
-  background: rgba(40, 30, 22, 0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .lightbox-prev { left: 24px; }
@@ -862,7 +865,7 @@ a {
   max-height: 78vh;
   object-fit: contain;
   border-radius: var(--radius);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 60px rgba(44, 26, 14, 0.15);
   transform: scale(0.95);
   transition: transform 0.4s var(--ease);
 }
@@ -913,12 +916,12 @@ a {
     width: 260px;
     height: 100vh;
     flex-direction: column;
-    background: rgba(26, 20, 16, 0.95);
+    background: rgba(250, 246, 240, 0.95);
     backdrop-filter: blur(24px);
     padding: 80px 32px;
     gap: 20px;
     transition: right 0.35s var(--ease);
-    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 1px solid rgba(160, 120, 80, 0.1);
     border-radius: 0;
   }
 
