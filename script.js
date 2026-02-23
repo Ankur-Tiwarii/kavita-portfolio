@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const subject = document.getElementById('formSubject').value || 'Portfolio Inquiry';
     const message = document.getElementById('formMessage').value;
     const body = `Hi Kavita,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(name)}%0D%0AEmail: ${encodeURIComponent(email)}`;
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&to=ankur.tiwari.work@gmail.com&su=${encodeURIComponent(subject)}&body=${body}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&to=Kavipatelkp1995@gmail.com&su=${encodeURIComponent(subject)}&body=${body}`;
     window.open(gmailUrl, '_blank');
 
     const btn = e.target.querySelector('button');
