@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Original WhatsApp images (kept in organized images/ folder)
+WhatsApp Image *.jpeg
+
+# Resume PDF
+*.pdf
+
+# Node
+node_modules/
