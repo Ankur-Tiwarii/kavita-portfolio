@@ -657,6 +657,9 @@ a {
   gap: 16px;
   align-items: center;
   padding: 18px 22px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .contact-item svg {
